@@ -14,6 +14,12 @@ return [
     |
     */
 
+    'fcm' => [
+        // Absolute path to the Firebase service-account JSON. When
+        // absent, the push channel reports itself unavailable.
+        'credentials' => env('FIREBASE_CREDENTIALS'),
+    ],
+
     'postmark' => [
         'key' => env('POSTMARK_API_KEY'),
     ],

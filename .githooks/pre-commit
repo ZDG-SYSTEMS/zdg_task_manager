@@ -1,0 +1,5 @@
+#!/bin/sh
+# Repo-wide pre-commit gate: no emoji anywhere (CLAUDE.md hard convention).
+# Enable with: git config core.hooksPath .githooks
+
+php "$(git rev-parse --show-toplevel)/scripts/check_no_emoji.php" || exit 1

@@ -1,8 +1,8 @@
 <?php
 
-use Illuminate\Foundation\Inspiring;
-use Illuminate\Support\Facades\Artisan;
+use Illuminate\Support\Facades\Schedule;
 
-Artisan::command('inspire', function () {
-    $this->comment(Inspiring::quote());
-})->purpose('Display an inspiring quote');
+// Daily maintenance: recompute approver-visible priorities and overdue
+// flags first, then escalate anything the queue has neglected.
+Schedule::command('tasks:refresh-priorities')->dailyAt('00:05');
+Schedule::command('tasks:escalate')->dailyAt('00:15');
