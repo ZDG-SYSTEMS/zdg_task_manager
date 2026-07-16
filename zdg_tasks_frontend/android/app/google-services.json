@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1076804444918",
+    "project_id": "com-example-zdg-tasks",
+    "storage_bucket": "com-example-zdg-tasks.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1076804444918:android:fd1f89e0134177d95ac2d7",
+        "android_client_info": {
+          "package_name": "com.example.zdg_tasks"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAnOYzq_0ggLH9PqA-CeYmz-OpU17IhU_Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
